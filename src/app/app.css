@@ -66,6 +66,10 @@
           accent-color: #33ff00;
           margin-inline-end: 5px;
         }
+
+        del {
+          color: #a5a5a5;
+        }
         span {
           margin-inline-end: 5px;
         }
