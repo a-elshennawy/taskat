@@ -59,7 +59,10 @@
     li {
       margin: 5px 0px;
       color: #fff;
-      align-content: baseline;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      align-content: center;
 
       label {
         input {
