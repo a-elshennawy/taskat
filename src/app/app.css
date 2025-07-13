@@ -3,7 +3,7 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -30%);
-  border: 1px solid #fff;
+  box-shadow: 0 0 10px #fff;
   border-radius: 16px;
   padding: 10px 5px;
   justify-content: center;
@@ -59,41 +59,35 @@
     li {
       margin: 5px 0px;
       color: #fff;
-      display: flex;
-      justify-items: center;
-      align-items: center;
-      align-content: center;
 
-      label {
-        input {
-          accent-color: #33ff00;
-          margin-inline-end: 5px;
-        }
+      input {
+        accent-color: #33ff00;
+        margin-inline-end: 5px;
+      }
 
-        del {
-          color: #a5a5a5;
-        }
-        span {
-          margin-inline-end: 5px;
-        }
+      del {
+        color: #a5a5a5;
+      }
+      span {
+        margin-inline-end: 5px;
       }
 
       button {
+        float: inline-end;
         background-color: transparent;
         color: #fff;
         border: none;
+        padding: 0;
 
         svg {
-          padding: 5px;
-          margin: 0;
-          border-radius: 50%;
           transition: all 0.3s ease-in-out;
         }
 
         &:hover {
           svg {
-            background-color: #fd0000;
             transform: rotate(180deg);
+            color: #fd0000;
+            filter: drop-shadow(0 0 10px #fd0000);
           }
         }
       }
